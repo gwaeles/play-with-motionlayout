@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:motion="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/motionLayout">
+
+    <Transition
+            motion:constraintSetStart="@layout/menu"
+            motion:constraintSetEnd="@layout/menu_expended"
+            motion:duration="400"
+            motion:motionInterpolator="linear">
+
+        <!--
+        MotionScene for timing
+
+        For each item :
+            - A KeyFrameSet for positionning the start
+            - A KeyFrameSet for positionning the end
+        -->
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab1"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="42"
+                    motion:percentX="1"
+                    motion:percentY="1"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab1"
+                    motion:framePosition="21"
+                    android:rotation="180"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab1"
+                    motion:framePosition="42"
+                    android:alpha="1"
+                    android:rotation="0"
+                    android:scaleX="1"
+                    android:scaleY="1"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab2"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="14"
+                    motion:percentX="0"
+                    motion:percentY="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab2"
+                    motion:framePosition="14"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab2"
+                    motion:framePosition="14"
+                    android:rotation="0"
+                    android:alpha="0"
+                    android:scaleX="0.1"
+                    android:scaleY="0.1"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab2"
+                    motion:framePosition="35"
+                    android:rotation="180"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab2"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="56"
+                    motion:percentX="1"
+                    motion:percentY="1"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab2"
+                    motion:framePosition="56"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab2"
+                    motion:framePosition="56"
+                    android:alpha="1"
+                    android:scaleX="1"
+                    android:scaleY="1"/>
+
+        </KeyFrameSet>
+
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab3"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="28"
+                    motion:percentX="0"
+                    motion:percentY="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab3"
+                    motion:framePosition="28"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab3"
+                    motion:framePosition="28"
+                    android:alpha="0"
+                    android:scaleX="0.1"
+                    android:scaleY="0.1"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab3"
+                    motion:framePosition="49"
+                    android:rotation="180"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab3"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="70"
+                    motion:percentX="1"
+                    motion:percentY="1"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab3"
+                    motion:framePosition="70"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab3"
+                    motion:framePosition="70"
+                    android:alpha="1"
+                    android:scaleX="1"
+                    android:scaleY="1"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab4"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="42"
+                    motion:percentX="0"
+                    motion:percentY="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab4"
+                    motion:framePosition="42"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab4"
+                    motion:framePosition="42"
+                    android:alpha="0"
+                    android:scaleX="0.1"
+                    android:scaleY="0.1"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab4"
+                    motion:framePosition="63"
+                    android:rotation="180"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab4"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="84"
+                    motion:percentX="1"
+                    motion:percentY="1"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab4"
+                    motion:framePosition="84"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab4"
+                    motion:framePosition="84"
+                    android:alpha="1"
+                    android:scaleX="1"
+                    android:scaleY="1"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab5"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="56"
+                    motion:percentX="0"
+                    motion:percentY="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab5"
+                    motion:framePosition="56"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab5"
+                    motion:framePosition="56"
+                    android:alpha="0"
+                    android:scaleX="0.1"
+                    android:scaleY="0.1"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab5"
+                    motion:framePosition="77"
+                    android:rotation="180"/>
+
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                    motion:motionTarget="@+id/fab5"
+                    motion:keyPositionType="deltaRelative"
+                    motion:framePosition="98"
+                    motion:percentX="1"
+                    motion:percentY="1"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab5"
+                    motion:framePosition="98"
+                    android:rotation="0"/>
+
+            <KeyAttribute
+                    motion:motionTarget="@id/fab5"
+                    motion:framePosition="98"
+                    android:alpha="1"
+                    android:scaleX="1"
+                    android:scaleY="1"/>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+</MotionScene>
